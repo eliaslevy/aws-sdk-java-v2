@@ -58,7 +58,7 @@ public class StreamingOutputOperationResponse extends AmazonWebServiceResult<Res
     public interface Builder extends CopyableBuilder<Builder, StreamingOutputOperationResponse> {
     }
 
-    private static final class BuilderImpl implements Builder {
+    static final class BuilderImpl implements Builder {
         private BuilderImpl() {
         }
 
