@@ -87,6 +87,7 @@ public class ExecutionContext implements ToCopyableBuilder<ExecutionContext.Buil
      *
      * @return true if retry capacity was consumed
      */
+    @ReviewBeforeRelease("Not used. Should it be?")
     public boolean retryCapacityConsumed() {
         return retryCapacityConsumed;
     }
@@ -122,6 +123,7 @@ public class ExecutionContext implements ToCopyableBuilder<ExecutionContext.Buil
         this.credentialsProvider = credentialsProvider;
     }
 
+    @ReviewBeforeRelease("Not used. Should it be?")
     public ClientExecutionAbortTrackerTask getClientExecutionTrackerTask() {
         return clientExecutionTrackerTask;
     }
