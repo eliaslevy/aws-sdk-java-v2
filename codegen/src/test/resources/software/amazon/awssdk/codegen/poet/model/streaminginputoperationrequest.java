@@ -1,5 +1,6 @@
 package software.amazon.awssdk.services.jsonprotocoltests.model;
 
+import java.util.Optional;
 import javax.annotation.Generated;
 import software.amazon.awssdk.AmazonWebServiceRequest;
 import software.amazon.awssdk.utils.builder.CopyableBuilder;
@@ -9,7 +10,7 @@ import software.amazon.awssdk.utils.builder.ToCopyableBuilder;
  */
 @Generated("software.amazon.awssdk:codegen")
 public class StreamingInputOperationRequest extends AmazonWebServiceRequest implements
-                                                                            ToCopyableBuilder<StreamingInputOperationRequest.Builder, StreamingInputOperationRequest> {
+        ToCopyableBuilder<StreamingInputOperationRequest.Builder, StreamingInputOperationRequest> {
     private StreamingInputOperationRequest(BuilderImpl builder) {
     }
 
@@ -52,6 +53,13 @@ public class StreamingInputOperationRequest extends AmazonWebServiceRequest impl
         sb.append("{");
         sb.append("}");
         return sb.toString();
+    }
+
+    public <T> Optional<T> getValueForField(String fieldName, Class<T> clazz) {
+        switch (fieldName) {
+        default:
+            return Optional.empty();
+        }
     }
 
     public interface Builder extends CopyableBuilder<Builder, StreamingInputOperationRequest> {

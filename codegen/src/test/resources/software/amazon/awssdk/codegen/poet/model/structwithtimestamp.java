@@ -1,6 +1,7 @@
 package software.amazon.awssdk.services.jsonprotocoltests.model;
 
 import java.time.Instant;
+import java.util.Optional;
 import javax.annotation.Generated;
 import software.amazon.awssdk.annotation.SdkInternalApi;
 import software.amazon.awssdk.protocol.ProtocolMarshaller;
@@ -80,6 +81,15 @@ public class StructWithTimestamp implements StructuredPojo, ToCopyableBuilder<St
         return sb.toString();
     }
 
+    public <T> Optional<T> getValueForField(String fieldName, Class<T> clazz) {
+        switch (fieldName) {
+        case "NestedTimestamp":
+            return Optional.of(clazz.cast(nestedTimestamp()));
+        default:
+            return Optional.empty();
+        }
+    }
+
     @SdkInternalApi
     @Override
     public void marshall(ProtocolMarshaller protocolMarshaller) {
@@ -127,4 +137,3 @@ public class StructWithTimestamp implements StructuredPojo, ToCopyableBuilder<St
         }
     }
 }
-
